@@ -1,0 +1,149 @@
+/* src/app/components/home/SwimmingPool.module.css */
+.section {
+    position: relative;
+    height: 80vh;
+    background: url('/images/home/swimming_pool.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 924px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.textContainer {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContainer h2 {
+    margin-right: 30px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-noto-serif);
+    font-weight: 200;
+    line-height: 82.8px;
+    letter-spacing: 1px;
+}
+
+.videoIcon {
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 84px;
+    width: 84px;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.playButton {
+    position: absolute;
+    left: 33px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #D9D9D9;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    padding-left: -20px;
+    border-radius: 2px;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.videoIcon:hover {
+    background-color: #D9D9D9;
+}
+
+.videoIcon:hover .playButton {
+    border-left-color: #363535;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.modalContent {
+    position: relative;
+    aspect-ratio: 6/4;
+    max-width: 900px;
+    width: 100vw;
+    padding: 0;
+    z-index: 12;
+}
+.iframeStyle{
+    border: none;
+    box-shadow: #363535;
+}
+.modalCloseWrapper {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    cursor: pointer;
+}
+
+.modalCloseSpan {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.modalCloseBot {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+@media (max-width: 1025px) {
+    .section {
+        position: relative;
+        height: 80vh;
+        background: url('/images/home/swimming_pool.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 700px;
+    }
+
+    .image {
+        justify-content: center;
+    }
+    .textContainer h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-family: var(--font-noto-serif);
+        font-weight: 200;
+        line-height: 82.8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 448px) {
+    .section {
+        max-height: 500px;
+    }
+}

@@ -1,0 +1,9 @@
+/* src/app/pages/Terms.module.css */
+.termsContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}

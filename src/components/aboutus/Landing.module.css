@@ -1,0 +1,93 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heroBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.heroBackgroundVideo,
+.heroBackgroundImage {
+    width: 100%;
+    height: 100%;
+}
+
+.heroBackgroundImage {
+    background: url('/images/aboutus_landing.jpg') no-repeat center center/cover;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: url('/images/aboutus_landing.jpg') no-repeat center center/cover;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroContent {
+    margin-bottom: 2rem;
+}
+
+.heroHeading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 200;
+    line-height: 82.8px;
+    text-align: left;
+    font-family: var(--font-noto-serif);
+    letter-spacing: 2px;
+}
+
+.heroEntry {
+    font-size: 1.25rem;
+    font-family: var(--font-banbas-400);
+    letter-spacing: -0.8px;
+}
+
+@media (max-width: 924px) {
+    .heroHeading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 200;
+        line-height: 82.8px;
+        text-align: left;
+        font-family: var(--font-noto-serif);
+
+    }
+}

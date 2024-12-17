@@ -1,0 +1,80 @@
+/* src/app/components/home/Location.module.css */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: var(--color-banbas);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.imageContainer {
+    aspect-ratio: 888/646;
+    width: 100%;
+    height: 100%;
+    max-width: 57.4%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionBodyText {
+    font-size: 1.3rem;
+    color: #1E1E1E;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    line-height: 1.7rem;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 1025px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sectionBodyText {
+        font-size: 1.2rem;
+        color: #1E1E1E;
+        letter-spacing: -1px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .imageContainer {
+        max-width: 85%;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 448px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .imageContainer {
+        max-width: 85%;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,114 @@
+/* src\app\components\common\ThreeSlider.module.css */
+.slider {
+  display: flex;
+  width: 96%;
+  height: 500px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  padding-top: 150px;
+}
+
+.sliderWrapper {
+  width: 100%;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  display: flex;
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+  align-items: center;
+}
+
+.imageSubContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  /* Default to 3 images */
+  height: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  transition: transform 1000ms ease-in-out;
+}
+
+.sliderImage {
+  width: 96%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.sliderImageHeader {
+  text-align: center;
+  color: #A06320;
+  font-family: var(--font-noto-serif);
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin-top: 15px;
+  /* Adjust as needed for spacing */
+}
+
+.sliderButton {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.rightButton {
+  position: absolute;
+  bottom: 15px;
+  right: 1%;
+  height: 40px;
+  padding-left: -20px;
+  transition: transform 100ms ease-in-out;
+}
+
+.leftButton {
+  position: absolute;
+  bottom: 15px;
+  left: 1%;
+  height: 40px;
+  padding-left: -20px;
+  transition: transform 100ms ease-in-out;
+}
+/* #A06320 */
+.leftButton:hover,
+.rightButton:hover {
+  transform: scale(1.1);
+}
+
+.imageSubContainer a {
+  text-decoration: none;
+}
+
+.imageSubContainer a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 600px) {
+  .slider {
+    padding-top: 50px;
+  }
+  .imageSubContainer {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .slider {
+    padding-top: 50px;
+  }
+
+  .imageSubContainer {
+    width: 100%;
+  }
+}

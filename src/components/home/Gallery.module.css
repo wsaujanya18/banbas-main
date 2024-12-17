@@ -1,0 +1,20 @@
+/* src\app\components\home\Gallery.module.css */
+.section {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-bottom: 150px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}

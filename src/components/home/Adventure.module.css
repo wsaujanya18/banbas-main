@@ -1,0 +1,35 @@
+/* src/app/components/home/Adventure.module.css */
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-banbas);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden; /* Ensure no overflow */
+    padding-bottom: 50px;
+    min-height: 100vh;
+    height: auto;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 1025px){
+    .imageContainer {
+        width: 90%;
+    }
+
+    .section {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+

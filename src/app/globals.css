@@ -1,0 +1,25 @@
+/* src\app\globals.css */
+:root {
+  --color-light: #F7F3ED;
+  --color-black: #000000;
+  --color-banbas: #134939;
+  --color-text-header: #A06320;
+  --color-text-body: #1E1E1E;
+  --color-background-brown-100: #f4f4f4;
+  --color-background-brown-200:#F7F1E4;
+  --color-background-brown-300:#EBE8E3;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #EBE8E3;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}

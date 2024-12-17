@@ -1,0 +1,110 @@
+/* src\app\components\common\CommonButton.module.css */
+.button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+    text-decoration: none;
+    font-family: var(--font-noto-serif);
+    font-weight: 900;
+    border: none;
+    letter-spacing: 1.5px;
+    z-index: 2;
+}
+
+.basic {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.basic:hover {
+    background-color: black;
+    color: white;
+}
+
+.normal {
+    background-color: transparent;
+    color: #A06320;
+    border: 1px solid #A06320;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.normal:hover {
+    background-color: #A06320;
+    color: #F7F3ED;
+}
+
+.whiteBg {
+    background-color: transparent;
+    color: #F7F3ED;
+    border: 1px solid #F7F3ED;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.whiteBg:hover {
+    background-color: #F7F3ED;
+    color: #134939;
+}
+
+.greenButton {
+    background-color: transparent;
+    color: #F7F3ED;
+    border: 1px solid #F7F3ED;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.greenButton:hover {
+    background-color: #F7F3ED;
+    color: #134939;
+}
+
+.banbasButton{
+    background-color: transparent;
+    color: #F7F3ED;
+    border: 1px solid #F7F3ED;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.banbasButton:hover{
+    background-color: #F7F3ED;
+    color: #134939;
+}
+
+@media (max-width: 924px) {
+    .whiteBg {
+        background-color: transparent;
+        padding: 12px 0px;
+        padding-right: 10px;
+        color: black;
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 2.8px;
+        font-weight: 600;
+        z-index: 2;
+    }
+
+    .whiteBg:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    .greenButton {
+        background-color: transparent;
+        padding: 12px 0px;
+        padding-right: 10px;
+        color: black;
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 2.8px;
+        font-weight: 600;
+        z-index: 2;
+    }
+
+    .greenButton:hover {
+        background-color: transparent;
+        color: black;
+    }
+}

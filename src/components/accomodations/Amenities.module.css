@@ -1,0 +1,22 @@
+/* src/components/common/Amenities.module.css */
+.amenitiesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    margin: 20px auto;
+}
+
+@media (max-width: 778px) {
+    .amenitiesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 448px) {
+    .amenitiesContainer {
+        grid-template-columns: 1fr;
+    }
+}

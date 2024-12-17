@@ -1,0 +1,30 @@
+/* src/app/reserve/page.module.css */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background: #EBE8E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #A06320;
+    font-family: var(--font-noto-serif);
+    font-weight: 400;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #A06320;
+    font-family: var(--font-noto-serif);
+    font-weight: 300;
+}

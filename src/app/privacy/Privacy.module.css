@@ -1,0 +1,9 @@
+/* src/app/pages/Privacy.module.css */
+.privacyContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: var(--font-banbas-200);
+    color: #333;
+    line-height: 1.6;
+}

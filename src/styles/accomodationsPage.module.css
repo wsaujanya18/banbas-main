@@ -1,0 +1,145 @@
+/* src/components/accomodations/Deluxe.module.css */
+.accomodationTypeDarkBackground {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-banbas);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden; /* Ensure no overflow */
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.accomodationTypeLightBackground {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden; /* Ensure no overflow */
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.accomodationTypeHeader {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.accomodationTypeHeaderReverse {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+}
+
+.textAndButton {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+}
+
+.amenitiesContainer {
+    width: 100vw;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sliderContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+    .accomodationTypeDarkBackground {
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    
+    .accomodationTypeLightBackground {
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    .accomodationTypeHeader {
+        flex-direction: column;
+    }
+
+    .accomodationTypeHeaderReverse {
+        flex-direction: column;
+    }
+
+    .amenitiesContainer {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .textAndButton {
+        width: 90%;
+        text-align: center;
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    .imageContainer {
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .sliderContainer {
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 448px) {
+    .accomodationTypeDarkBackground {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    
+    .accomodationTypeLightBackground {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    
+    .imageContainer {
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .sliderContainer {
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

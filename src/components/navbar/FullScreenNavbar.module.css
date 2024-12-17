@@ -1,0 +1,70 @@
+/* src/app/components/FullScreenNavbar.module.css */
+.fullScreenNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #134939;
+    color: #f7f3ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.navCloseWrapper {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.navCloseSpan {
+    background-color: #f7f3ed;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.navCloseBot {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLink {
+    color: #f7f3ed;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-banabas);
+    letter-spacing: 2px;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.logoContainer{
+    position: absolute;
+    bottom: 100px;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;   
+}

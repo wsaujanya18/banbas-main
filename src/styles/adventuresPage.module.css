@@ -1,0 +1,101 @@
+/* src/styles/adventuresPage.module.css */
+.section_whitebg {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.section_banbasbg {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-banbas);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.section_slider {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-banbas);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    max-height: 500px;
+}
+
+.sliderContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+    width: 90vw;
+}
+
+@media (max-width: 1025px) {
+
+    .section_whitebg {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .section_banbasbg {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .section_slider {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .imageContainer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        width: 90%;
+    }
+    
+    .sliderContainer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        max-height: 500px;
+        width: 90vw;
+    }
+
+}

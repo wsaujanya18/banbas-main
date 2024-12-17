@@ -1,0 +1,21 @@
+/* src\app\components\navbar\ReserveNavbar.module.css */
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    z-index: 3;
+    background-color: #134939;
+}
+
+.logoContainerLargeScreen {
+    display: block;
+}
+
+.logo {
+    width: 320px;
+    height: 100px;
+    z-index: 4;
+}

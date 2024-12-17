@@ -1,0 +1,43 @@
+/* src/styles/description.module.css */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden; /* Ensure no overflow */
+    margin: 0 auto;
+    background-color: var(--color-background-brown-100);
+}
+
+.sectionEntireScreenContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden;
+}
+
+
+@media(max-width:1025px){
+    .section {
+        min-height: 700px;
+    }
+}
+
+@media(max-width:778px){
+    .section {
+        min-height: 500px;
+    }
+}
+
+@media(max-width: 448px){
+    .section {
+        min-height: 500px;
+    }
+}

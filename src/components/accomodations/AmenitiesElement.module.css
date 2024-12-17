@@ -1,0 +1,31 @@
+/* src/components/accomodations/AmenitiesElement.module.css */
+.amenity {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.textBrown {
+    font-size: 1rem;
+    color: var(--color-text-header);
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    line-height: 2rem;
+    font-family: var(--font-banbas-200);
+}
+
+.textWhite {
+    font-size: 1rem;
+    color: var(--color-light);
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    line-height: 2rem;
+    font-family: var(--font-banbas-200);
+}

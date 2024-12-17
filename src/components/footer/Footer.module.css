@@ -1,0 +1,150 @@
+/* src/app/components/footer/Footer.module.css */
+.footerContainer {
+  background-color: #134939;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+  height: 600px;
+  position: relative;
+}
+
+.logoContainer {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px;
+}
+
+.socialMediaLinks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaLinks a {
+  margin: 0 18px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.socialIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.termsAndPrivacy {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  font-family: var(--font-banbas-200);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 1.3px;
+}
+
+.termsAndPrivacy a {
+  color: #EBE8E3;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.termsAndPrivacy a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  margin-right: 200px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 250px;
+  left: 0;
+  right: 0;
+  font-family: var(--font-banbas-200);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+}
+
+.designedAndDeveloped {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  left: 0;
+  font-family: var(--font-banbas-200);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 10px;
+  letter-spacing: 0.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.designedAndDeveloped p {
+  margin: 0;
+}
+
+.designedAndDeveloped a {
+  color: #EBE8E3;
+  text-decoration: none;
+  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 12px;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+.designedAndDeveloped a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 612px) {
+  .designedAndDeveloped {
+    flex-direction: column;
+  }
+
+  .designedAndDeveloped a {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 612px) and (min-width: 448px) {
+  .termsAndPrivacy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .terms {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 448px) {
+  .termsAndPrivacy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .terms {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

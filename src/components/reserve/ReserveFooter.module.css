@@ -1,0 +1,30 @@
+.reserveNav {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--color-background-brown-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100px; /* Initially positioned out of view */
+    left: 0;
+    z-index: 10; /* Ensure the footer is on top of other elements */
+    transition: bottom 0.5s ease-in-out; /* Smooth transition for bottom property */
+  }
+  
+  .show {
+    bottom: 0; /* Move into view */
+  }
+  
+  .reserveButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+@media (max-width: 778px){
+  .reserveNav{
+    display: none;
+  }
+
+}

@@ -1,0 +1,75 @@
+/* src\styles\diningPage.module.css */
+.section_diningImages {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.section_banbasbg {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-banbas);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden; /* Ensure no overflow */
+    margin: 0 auto;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+}
+
+.image { 
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+}
+
+@media (max-width: 1025px) {
+    .section_diningImages {
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    
+    .section_banbasbg {
+        min-height: auto;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    
+    .imageContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 448px) {
+    .section_diningImages {
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    
+    .section_banbasbg {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .imageContainer {
+        width: 90%;
+    }
+}

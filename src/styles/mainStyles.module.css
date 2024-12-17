@@ -1,0 +1,173 @@
+/* src/app/styles/mainStyles.module.css */
+.sectionEntireScreenContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 1024px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden;
+}
+
+.sectionHeaderText {
+    font-size: 3rem;
+    color: #A06320;
+    font-weight: 300;
+    letter-spacing: -2px;
+    font-family: var(--font-noto-serif);
+}
+
+.sectionHeaderTextWhite {
+    font-size: 3rem;
+    color: var(--color-light);
+    font-weight: 300;
+    letter-spacing: -2px;
+    font-family: var(--font-noto-serif);
+}
+
+.sectionBodyText {
+    font-size: 1.5rem;
+    color: #1E1E1E;
+    letter-spacing: -0.1px;
+    font-weight: 200;
+    line-height: 2.5rem;
+    font-family: var(--font-banbas-200);
+}
+
+.sectionBodyTextWhite {
+    font-size: 1.5rem;
+    color: var(--color-light);
+    letter-spacing: -0.1px;
+    font-weight: 200;
+    line-height: 2.5rem;
+    font-family: var(--font-banbas-200);
+}
+
+.sectionEntireScreenContentAndImage {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sectionEntireScreenContentAndImageReverse {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+}
+
+.subsectionHalfScreenContent {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.contentText{
+    margin-bottom: 30px;
+}
+
+.buttonContainer{
+    margin-top: 50px;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image { 
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+@media (max-width: 1025px) {
+    .sectionEntireScreenContent {
+        min-height: auto;
+        padding: 100px 0px;
+    }
+    .sectionHeaderText {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+    .sectionHeaderTextWhite {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+    .sectionBodyText {
+        font-size: 1.2rem;
+        color: #1E1E1E;
+        letter-spacing: -1px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .sectionBodyTextWhite {
+        font-size: 1.2rem;
+        color: var(--color-light);
+        letter-spacing: -1px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .sectionEntireScreenContentAndImage {
+        flex-direction: column-reverse;
+    }
+
+    .sectionEntireScreenContentAndImageReverse {
+        flex-direction: column-reverse;
+    }
+
+    .subsectionHalfScreenContent {
+        width: 90%;
+        text-align: center;
+        padding: 100px 0px;
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 448px) {
+    .sectionEntireScreenContent {
+        min-height: auto;
+    }
+    .subsectionHalfScreenContent {
+        width: 90%;
+        text-align: center;
+        padding: 50px 0px;
+        min-height: auto;
+    }
+    .sectionHeaderText {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+    .sectionHeaderTextWhite {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+    .sectionBodyText {
+        font-size: 1.2rem;
+        color: #1E1E1E;
+        letter-spacing: -1px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .sectionBodyTextWhite {
+        font-size: 1.2rem;
+        color: var(--color-light);
+        letter-spacing: -1px;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+}
